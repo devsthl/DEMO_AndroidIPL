@@ -1,0 +1,97 @@
+<resources>
+    <string name="app_name">ad0821e_mapa1</string>
+
+    <string-array name="ThienCan">
+        <item>Canh</item>
+        <item>Tân</item>
+        <item>Nhâm</item>
+        <item>Quý</item>
+        <item>Giáp</item>
+        <item>Ất</item>
+        <item>Bính</item>
+        <item>Đinh</item>
+        <item>Mậu</item>
+        <item>Kỷ</item>
+    </string-array>
+    <string-array name="DiaChiDuong">
+        <item>Tý</item>
+        <item>Dần</item>
+        <item>Thìn</item>
+        <item>Ngọ</item>
+        <item>Thân</item>
+        <item>Tuất</item>
+    </string-array>
+    <string-array name="DiaChiAm">
+        <item>Sửu</item>
+        <item>Mão</item>
+        <item>Tỵ</item>
+        <item>Mùi</item>
+        <item>Dậu</item>
+        <item>Hợi</item>
+    </string-array>
+    <string-array name="TinhThanh">
+        <item>1.Thành phố Hà Nội</item>
+        <item>2.Thành phố Hồ Chí Minh</item>
+        <item>3.Tỉnh An Giang</item>
+        <item>4.Tỉnh Bà Rịa - Vũng Tàu</item>
+        <item>5.Tỉnh Bạc Liêu</item>
+        <item>6.Tỉnh Bắc Giang</item>
+        <item>7.Tỉnh Bắc Kạn</item>
+        <item>8.Tỉnh Bắc Ninh</item>
+        <item>9.Tỉnh Bến Tre</item>
+        <item>10.Tỉnh Bình Dương</item>
+        <item>11.Tỉnh Bình Định</item>
+        <item>12.Tỉnh Bình Phước</item>
+        <item>13.Tỉnh Bình Thuận</item>
+        <item>14.Tỉnh Cao Bằng</item>
+        <item>15.Tỉnh Cà Mau</item>
+        <item>16.Thành phố Cần Thơ</item>
+        <item>17.Thành phố Hải Phòng</item>
+        <item>18.Thành phố Đà Nẵng</item>
+        <item>19.Tỉnh Gia Lai</item>
+        <item>20.Tỉnh Hòa Bình</item>
+        <item>21.Tỉnh Hà Giang</item>
+        <item>22.Tỉnh Hà Nam</item>
+        <item>23.Tỉnh Hà Tĩnh</item>
+        <item>24.Tỉnh Hưng Yên</item>
+        <item>25.Tỉnh Hải Dương</item>
+        <item>26.Tỉnh Hậu Giang</item>
+        <item>27.Tỉnh Điện Biên</item>
+        <item>28.Tỉnh Đắk Lắk</item>
+        <item>29.Tỉnh Đắk Nông</item>
+        <item>30.Tỉnh Đồng Nai</item>
+        <item>31.Tỉnh Đồng Tháp</item>
+        <item>32.Tỉnh Khánh Hòa</item>
+        <item>33.Tỉnh Kiên Giang</item>
+        <item>34.Tỉnh Kon Tum</item>
+        <item>35.Tỉnh Lai Châu</item>
+        <item>36.Tỉnh Long An</item>
+        <item>37.Tỉnh Lào Cai</item>
+        <item>38.Tỉnh Lâm Đồng</item>
+        <item>39.Tỉnh Lạng Sơn</item>
+        <item>40.Tỉnh Nam Định</item>
+        <item>41.Tỉnh Nghệ An</item>
+        <item>42.Tỉnh Ninh Bình</item>
+        <item>43.Tỉnh Ninh Thuận</item>
+        <item>44.Tỉnh Phú Thọ</item>
+        <item>45.Tỉnh Phú Yên</item>
+        <item>46.Tỉnh Quảng Bình</item>
+        <item>47.Tỉnh Quảng Nam</item>
+        <item>48.Tỉnh Quảng Ngãi</item>
+        <item>49.Tỉnh Quảng Ninh</item>
+        <item>50.Tỉnh Quảng Trị</item>
+        <item>51.Tỉnh Sóc Trăng</item>
+        <item>52.Tỉnh Sơn La</item>
+        <item>53.Tỉnh Thanh Hóa</item>
+        <item>54.Tỉnh Thái Bình</item>
+        <item>55.Tỉnh Thái Nguyên</item>
+        <item>56.Tỉnh Thừa Thiên - Huế</item>
+        <item>57.Tỉnh Tiền Giang</item>
+        <item>58.Tỉnh Trà Vinh</item>
+        <item>59.Tỉnh Tuyên Quang</item>
+        <item>60.Tỉnh Tây Ninh</item>
+        <item>61.Tỉnh Vĩnh Long</item>
+        <item>62.Tỉnh Vĩnh Phúc</item>
+        <item>63.Tỉnh Yên Bái</item>
+    </string-array>
+</resources>
