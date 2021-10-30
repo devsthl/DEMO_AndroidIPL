@@ -2,195 +2,202 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/csStudent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg1"
-    tools:context=".StudentRegister">
+    android:id="@+id/csStudent"
+    android:background="@drawable/background1"
+    tools:context=".StudentRegisterActivity">
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/guideline1"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.35" />
+        app:layout_constraintGuide_percent="0.35"/>
 
     <ImageView
-        android:id="@+id/logo1"
         android:layout_width="200dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/itplus_logo"
+        android:layout_height="100dp"
+        android:id="@+id/logo1"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        android:src="@drawable/logo"/>
 
     <TextView
-        android:id="@+id/txtFullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Full Name"
-        android:textSize="15dp"
-        app:layout_constraintRight_toLeftOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/logo1" />
+        android:id="@+id/txtFullName"
+        android:text="Full Name: "
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        android:layout_marginTop="20dp"/>
 
     <EditText
-        android:id="@+id/edFullName"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="0dp"
-        android:hint="type Name"
-        android:textSize="15dp"
-        app:layout_constraintLeft_toRightOf="@+id/txtFullName"
-        app:layout_constraintTop_toBottomOf="@+id/logo1" />
+        android:id="@+id/edtFullName"
+        android:hint="Full Name"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        android:layout_marginTop="6dp"/>
 
     <TextView
-        android:id="@+id/txtBirthDay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="BirthDay"
+        android:id="@+id/txtDateOfBirth"
+        android:text="Date of Birth"
         android:textSize="15dp"
-        app:layout_constraintRight_toLeftOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/edFullName" />
+        app:layout_constraintTop_toBottomOf="@id/txtFullName"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        android:layout_marginTop="40dp"/>
 
     <DatePicker
-        android:id="@+id/dtpDateofBirth"
         android:layout_width="wrap_content"
         android:layout_height="150dp"
-        android:calendarViewShown="false"
+        android:id="@+id/dtpDateofBirth"
         android:datePickerMode="spinner"
-        app:layout_constraintLeft_toRightOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/edFullName" />
+        android:calendarViewShown="false"
+        app:layout_constraintTop_toBottomOf="@id/edtFullName"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"/>
 
     <TextView
-        android:id="@+id/txtSex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Sex:"
+        android:id="@+id/txtSex"
+        android:text="Sex: "
         android:textSize="15dp"
-        app:layout_constraintRight_toLeftOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/dtpDateofBirth" />
+        app:layout_constraintTop_toBottomOf="@id/dtpDateofBirth"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        android:layout_marginTop="15dp"/>
 
     <RadioGroup
-        android:id="@+id/RadioGroupSex"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/radioGroupSex"
         android:orientation="horizontal"
-        app:layout_constraintLeft_toRightOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/dtpDateofBirth">
-
+        app:layout_constraintTop_toBottomOf="@id/dtpDateofBirth"
+        app:layout_constraintLeft_toRightOf="@id/guideline1">
         <RadioButton
-            android:id="@+id/radioButtonMale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male" />
-
+            android:id="@+id/rbtnMale"
+            android:text="Male"
+            android:checked="true"/>
         <RadioButton
-            android:id="@+id/radioButtonFemale"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female" />
+            android:id="@+id/rbtnFemale"
+            android:text="Female"/>
+
     </RadioGroup>
 
     <TextView
-        android:id="@+id/txtprovine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Provine:"
+        android:id="@+id/txtProvince"
+        android:text="Province: "
         android:textSize="15dp"
-        app:layout_constraintRight_toLeftOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/RadioGroupSex" />
+        app:layout_constraintTop_toBottomOf="@id/radioGroupSex"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        android:layout_marginTop="10dp"/>
 
     <Spinner
-        android:id="@+id/spinnerProvine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:id="@+id/spinnerProvince"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupSex"
         app:layout_constraintLeft_toRightOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/RadioGroupSex" />
+        android:layout_marginTop="10dp"/>
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:id="@+id/txtHobby"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:text="Hobbies:"
+        android:text="Hobby: "
         android:textSize="15dp"
-        app:layout_constraintRight_toLeftOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerProvine" />
+        app:layout_constraintTop_toBottomOf="@id/txtProvince"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        android:layout_marginTop="20dp"/>
 
     <CheckBox
-        android:id="@+id/travel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Travel"
-        app:layout_constraintLeft_toRightOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/spinnerProvine" />
-
-    <CheckBox
-        android:id="@+id/football"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/chkHobbyFootball"
         android:text="Football"
-        app:layout_constraintLeft_toRightOf="@id/travel"
-        app:layout_constraintTop_toBottomOf="@id/spinnerProvine" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProvince"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"/>
 
     <CheckBox
-        android:id="@+id/film"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/chkHobbyBadminton"
+        android:text="Badminton"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProvince"
+        app:layout_constraintLeft_toRightOf="@id/chkHobbyFootball"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chkHobbyFilm"
         android:text="Film"
-        app:layout_constraintLeft_toRightOf="@id/football"
-        app:layout_constraintTop_toBottomOf="@id/spinnerProvine" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerProvince"
+        app:layout_constraintLeft_toRightOf="@id/chkHobbyBadminton"/>
 
     <TextView
-        android:id="@+id/txtseekbar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Đánh giá"
-        app:layout_constraintRight_toLeftOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/txtHobby" />
+        android:id="@+id/txtTrinhdo"
+        android:text="Trình độ: "
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/txtHobby"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        android:layout_marginTop="20dp"/>
 
     <SeekBar
-        android:id="@+id/seekbar"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginRight="80dp"
-        app:layout_constraintLeft_toRightOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/txtHobby" />
+        android:id="@+id/sbTrinhDo"
+        app:layout_constraintTop_toBottomOf="@id/chkHobbyFilm"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        android:max="100"
+        android:layout_marginTop="10dp"/>
 
     <TextView
-        android:id="@+id/txthappy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Sự hài lòng"
-        app:layout_constraintRight_toLeftOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/txtseekbar" />
+        android:id="@+id/txtRating"
+        android:text="Rating: "
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTrinhdo"
+        app:layout_constraintRight_toLeftOf="@id/guideline1"
+        android:layout_marginTop="20dp"/>
 
     <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:id="@+id/rating"
-        app:layout_constraintLeft_toRightOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/txtseekbar" />
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:id="@+id/rbRating"
+        android:numStars="5"
+        app:layout_constraintTop_toBottomOf="@id/sbTrinhDo"
+        app:layout_constraintLeft_toRightOf="@id/guideline1"
+        android:layout_marginTop="5dp"/>
+
+
 
     <ImageButton
-        android:id="@+id/imgbtn"
         android:layout_width="250dp"
         android:layout_height="120dp"
-        android:layout_marginTop="50dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/register"
+        android:id="@+id/btnRegister"
+        android:src="@drawable/regis"
+        app:layout_constraintTop_toBottomOf="@id/txtRating"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txthappy" />
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:layout_marginTop="20dp"/>
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

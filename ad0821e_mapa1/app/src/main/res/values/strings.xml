@@ -29,69 +29,74 @@
         <item>Dậu</item>
         <item>Hợi</item>
     </string-array>
-    <string-array name="TinhThanh">
-        <item>1.Thành phố Hà Nội</item>
-        <item>2.Thành phố Hồ Chí Minh</item>
-        <item>3.Tỉnh An Giang</item>
-        <item>4.Tỉnh Bà Rịa - Vũng Tàu</item>
-        <item>5.Tỉnh Bạc Liêu</item>
-        <item>6.Tỉnh Bắc Giang</item>
-        <item>7.Tỉnh Bắc Kạn</item>
-        <item>8.Tỉnh Bắc Ninh</item>
-        <item>9.Tỉnh Bến Tre</item>
-        <item>10.Tỉnh Bình Dương</item>
-        <item>11.Tỉnh Bình Định</item>
-        <item>12.Tỉnh Bình Phước</item>
-        <item>13.Tỉnh Bình Thuận</item>
-        <item>14.Tỉnh Cao Bằng</item>
-        <item>15.Tỉnh Cà Mau</item>
-        <item>16.Thành phố Cần Thơ</item>
-        <item>17.Thành phố Hải Phòng</item>
-        <item>18.Thành phố Đà Nẵng</item>
-        <item>19.Tỉnh Gia Lai</item>
-        <item>20.Tỉnh Hòa Bình</item>
-        <item>21.Tỉnh Hà Giang</item>
-        <item>22.Tỉnh Hà Nam</item>
-        <item>23.Tỉnh Hà Tĩnh</item>
-        <item>24.Tỉnh Hưng Yên</item>
-        <item>25.Tỉnh Hải Dương</item>
-        <item>26.Tỉnh Hậu Giang</item>
-        <item>27.Tỉnh Điện Biên</item>
-        <item>28.Tỉnh Đắk Lắk</item>
-        <item>29.Tỉnh Đắk Nông</item>
-        <item>30.Tỉnh Đồng Nai</item>
-        <item>31.Tỉnh Đồng Tháp</item>
-        <item>32.Tỉnh Khánh Hòa</item>
-        <item>33.Tỉnh Kiên Giang</item>
-        <item>34.Tỉnh Kon Tum</item>
-        <item>35.Tỉnh Lai Châu</item>
-        <item>36.Tỉnh Long An</item>
-        <item>37.Tỉnh Lào Cai</item>
-        <item>38.Tỉnh Lâm Đồng</item>
-        <item>39.Tỉnh Lạng Sơn</item>
-        <item>40.Tỉnh Nam Định</item>
-        <item>41.Tỉnh Nghệ An</item>
-        <item>42.Tỉnh Ninh Bình</item>
-        <item>43.Tỉnh Ninh Thuận</item>
-        <item>44.Tỉnh Phú Thọ</item>
-        <item>45.Tỉnh Phú Yên</item>
-        <item>46.Tỉnh Quảng Bình</item>
-        <item>47.Tỉnh Quảng Nam</item>
-        <item>48.Tỉnh Quảng Ngãi</item>
-        <item>49.Tỉnh Quảng Ninh</item>
-        <item>50.Tỉnh Quảng Trị</item>
-        <item>51.Tỉnh Sóc Trăng</item>
-        <item>52.Tỉnh Sơn La</item>
-        <item>53.Tỉnh Thanh Hóa</item>
-        <item>54.Tỉnh Thái Bình</item>
-        <item>55.Tỉnh Thái Nguyên</item>
-        <item>56.Tỉnh Thừa Thiên - Huế</item>
-        <item>57.Tỉnh Tiền Giang</item>
-        <item>58.Tỉnh Trà Vinh</item>
-        <item>59.Tỉnh Tuyên Quang</item>
-        <item>60.Tỉnh Tây Ninh</item>
-        <item>61.Tỉnh Vĩnh Long</item>
-        <item>62.Tỉnh Vĩnh Phúc</item>
-        <item>63.Tỉnh Yên Bái</item>
+
+    <string-array name="province">
+        <item>	An Giang	</item>
+        <item>	Bà Rịa - Vũng Tàu	</item>
+        <item>	Bắc Giang	</item>
+        <item>	Bắc Kạn	</item>
+        <item>	Bạc Liêu	</item>
+        <item>	Bắc Ninh	</item>
+        <item>	Bến Tre	</item>
+        <item>	Bình Định	</item>
+        <item>	Bình Dương	</item>
+        <item>	Bình Phước	</item>
+        <item>	Bình Thuận	</item>
+        <item>	Cà Mau	</item>
+        <item>	Cần Thơ	</item>
+        <item>	Cao Bằng	</item>
+        <item>	Đà Nẵng	</item>
+        <item>	Đắk Lắk	</item>
+        <item>	Đắk Nông	</item>
+        <item>	Điện Biên	</item>
+        <item>	Đồng Nai	</item>
+        <item>	Đồng Tháp	</item>
+        <item>	Gia Lai	</item>
+        <item>	Cao Bằng	</item>
+        <item>	Bắc Kạn	</item>
+        <item>	Hà Giang	</item>
+        <item>	Hà Nam	</item>
+        <item>	Hà Nội	</item>
+        <item>	Hà Tĩnh	</item>
+        <item>	Hải Dương	</item>
+        <item>	Hải Phòng	</item>
+        <item>	Hậu Giang	</item>
+        <item>	Hòa Bình	</item>
+        <item>	Hưng Yên	</item>
+        <item>	Khánh Hòa	</item>
+        <item>	Kiên Giang	</item>
+        <item>	Kon Tum	</item>
+        <item>	Lai Châu	</item>
+        <item>	Lâm Đồng	</item>
+        <item>	Lạng Sơn	</item>
+        <item>	Lào Cai	</item>
+        <item>	Long An	</item>
+        <item>	Nam Định	</item>
+        <item>	Nghệ An	</item>
+        <item>	Ninh Bình	</item>
+        <item>	Ninh Thuận	</item>
+        <item>	Phú Thọ	</item>
+        <item>	Phú Yên	</item>
+        <item>	Quảng Bình	</item>
+        <item>	Quảng Nam	</item>
+        <item>	Quảng Ngãi	</item>
+        <item>	Quảng Ninh	</item>
+        <item>	Quảng Trị	</item>
+        <item>	Sóc Trăng	</item>
+        <item>	Sơn La	</item>
+        <item>	Tây Ninh	</item>
+        <item>	Thái Bình	</item>
+        <item>	Thái Nguyên	</item>
+        <item>	Thanh Hóa	</item>
+        <item>	Thừa Thiên Huế	</item>
+        <item>	Tiền Giang	</item>
+        <item>	Thành phố Hồ Chí Minh	</item>
+        <item>	Trà Vinh	</item>
+        <item>	Tuyên Quang	</item>
+        <item>	Vĩnh Long	</item>
+        <item>	Vĩnh Phúc	</item>
+        <item>	Yên Bái	</item>
+
+
     </string-array>
 </resources>

@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     //Khai bao
-    Button btnLayout, btnEvent, btnSignUp;
+    Button btnLayout, btnEvent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,10 +19,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Map
         btnLayout = (Button) findViewById(R.id.btnLayout);
         btnEvent = (Button) findViewById(R.id.btnEvent);
-        btnSignUp = (Button) findViewById(R.id.btnsingup) ;
+
         btnLayout.setOnClickListener(this);
         btnEvent.setOnClickListener(this);
-        btnSignUp.setOnClickListener(this);
     }
 
     @Override
@@ -32,9 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if(view.getId() == R.id.btnEvent) {
             Intent intent = new Intent(MainActivity.this, EventActivity.class);
-            startActivity(intent);
-        }else if(view.getId() == R.id.btnsingup){
-            Intent intent = new Intent(MainActivity.this, StudentRegister.class);
             startActivity(intent);
         }
     }

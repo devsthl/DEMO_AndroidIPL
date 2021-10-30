@@ -9,22 +9,27 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class SolarLunarActivity extends AppCompatActivity {
     EditText txtSolarYear;
     Button btnSwitch;
     Spinner spinner1, spinner2;
+    //TextView txtResult;
+
+    String diachi;
+
 
     ArrayAdapter<CharSequence> spinnerAdapter1, spinnerAdapter2;
     String dsThienCanDuong = "Giáp, Bính, Mậu, Canh, Nhâm";
     String dsThienCanAm = "Ất, Đinh, Kỷ, Tân, Quý";
-    String diachi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_solar_lunar);
 
+        //txtResult = (TextView) findViewById(R.id.txtResult);
         txtSolarYear = (EditText) findViewById(R.id.txtSolarYear);
         btnSwitch = (Button) findViewById(R.id.btnSwitch);
         spinner1 = (Spinner) findViewById(R.id.spinner1);//Thiên Can: Canh Tân, Nhâm...10 thiên can
@@ -32,16 +37,16 @@ public class SolarLunarActivity extends AppCompatActivity {
         //Load data to spinner
         loadSpinner1();
         loadSpinner2(R.array.DiaChiDuong);
+
         spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 String thienCan = spinnerAdapter1.getItem(position).toString();
-                if (dsThienCanDuong.indexOf(thienCan) > -1) {
+                if(dsThienCanDuong.indexOf(thienCan) > -1) {
                     loadSpinner2(R.array.DiaChiDuong);
-                } else if (dsThienCanAm.indexOf(thienCan) > -1) {
+                } else if(dsThienCanAm.indexOf(thienCan) > -1) {
                     loadSpinner2(R.array.DiaChiAm);
-                }
-                spinner2.setSelection(spinnerAdapter2.getPosition(diachi));
+                }spinner2.setSelection(spinnerAdapter2.getPosition(diachi));
             }
 
             @Override
@@ -49,31 +54,33 @@ public class SolarLunarActivity extends AppCompatActivity {
 
             }
         });
+
         btnSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
+                // Lấy năm DL/ÂL
                 String solarYear = txtSolarYear.getText().toString();
-                if (solarYear.equals("")) {//ko nhập năm DL vào
+                if(solarYear.equals("")){//không nhập năm DL
                     //AL -> DL
-                    int TC = spinner1.getSelectedItemPosition();
-                    int DC = spinner2.getSelectedItemPosition();
-                    for (int i = 1; i < 2022; i++) {
-                        if ((i % 10 == TC) && (i % 12 == DC)) {
+                    int indexTC = spinner1.getSelectedItemPosition();
+                    int indexDC = spinner2.getSelectedItemPosition();
+                    for(int i=2021;i>1982;i--){
+                        if((i%10)==indexTC && (i%12) == indexDC){
                             txtSolarYear.setText(String.valueOf(i));
                             break;
                         }
                     }
-                    for (; ; ) {
 
-                    }
-
-                } else {
-                    //DL -> AL
+                }else{
+                    //DL-AL
                     short sSolarYear = Short.parseShort(solarYear);
-                    int idxthiencan = new SolarLunarActivity().ThienCan1(sSolarYear);
-                    String diachi = new SolarLunarActivity().getDiaChi(sSolarYear);
-                    spinner1.setSelection(idxthiencan);
-                }
+                    int idxThienCan = new SolarLunarActivity().getThienCan(sSolarYear);
+                     diachi = new SolarLunarActivity().getDiaChi(sSolarYear);
+
+                    spinner1.setSelection(idxThienCan);
+                    //Vo nghia vi bi chen ngang
+                }// Lớp và thành phần lớp: MethodA -> MethodB của chính class
+
             }
         });
     }
@@ -90,11 +97,13 @@ public class SolarLunarActivity extends AppCompatActivity {
         spinner1.setAdapter(spinnerAdapter1);
     }
 
-    private int ThienCan1(short solarYear) {
-        return solarYear % 10;
+    private  int getThienCan(short solarYear){
+        return solarYear %10;
     }
 
-    private String getThienCan(short solarYear) {
+
+
+    protected String getThienCan1(short solarYear) {
         String can = "";
         switch (solarYear % 10) {
             case 0:
@@ -130,7 +139,6 @@ public class SolarLunarActivity extends AppCompatActivity {
         }
         return can;
     }
-
     private String getDiaChi(short solarYear) {
         // Xác định Chi
         String chi = "";

@@ -9,9 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Ad0821e_mapa1">
-        <activity
-            android:name=".StudentRegister"
-            android:exported="true" />
+        <activity android:name=".DisplayStudentActivity"></activity>
+        <activity android:name=".StudentRegisterActivity" />
         <activity android:name=".SolarLunarActivity" />
         <activity android:name=".EventActivity" />
         <activity android:name=".ConstraintLayoutActivity" />
